@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+   <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  integrity ="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.2"></script>
+  <title>Handwritten Digit Recognition using Convolutional Neural Networks</title>
+  
+  
+
+</head>
+
+<body>
+ 
+		<h1>POS tagging <span> Neural Networks</span></h1>
+
+		
+		
+		<label for="name">Enter a sentence to POS tag:</label>
+
+
+
+		<input type="text" id="name" name="name" required
+      	 minlength="1" maxlength="1000" size="100" >
+      	 
+
+			<!-- <input type="color" id="colors">
+			 <input type="number" id="lineWidth" style="width:60px" value="0.2" step="0.1" min="0.1"> -->
+			<input type="button" id="clearButton" value="Clear" style="">
+			<br/>
+			<span style="color: #4DAF7C; font-weight: 400; font-family: 'Open Sans', Helvetica;	"
+		</div>
+
+		<div style="margin-left:175px; margin-top:400px; float:left; position:absolute;">
+			
+			<a href="#" class="myButton"><span style=" font-weight: 400; font-family: 'Open Sans', Helvetica;	"> Predict </span></a>			
+		</div>
+		<div >
+			<h1 id="result" style="margin-right:20px; margin-top:300px;float:left;"><span> </span></h1>
+		</div>
+
+	    <script type="text/javascript">
+
+
+	   		(async() => {
+	   		const model = await tf.keras.models.load_model('converted_model/model.json');
+
+	   		}) () ;
+
+		
+	   
+	   </script>
+</body>
+</html>
